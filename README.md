@@ -1,1 +1,1 @@
-# Windows-Threat-Detection-IR-Lab
+# Windows Threat Detection IR Lab
