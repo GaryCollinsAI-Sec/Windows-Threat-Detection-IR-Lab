@@ -36,20 +36,20 @@ This lab builds a functional SOC environment to simulate real-world attacks, mon
 
 Ref 1 – Splunk & Sysmon Installation
 <p>Installed Splunk Enterprise to act as the SIEM and deployed Sysmon on the Windows target using a customized configuration file to capture deep endpoint telemetry.</p>
-<img width="1342" height="622" src="https://github.com/user-attachments/assets/504cd364-c08b-41eb-8090-7d99ccdcbd48" />
+
 
 Ref 2 – Ingesting Windows Logs
 <p>Configured the Splunk Universal Forwarder to ship Sysmon (Event ID 1, 3, and 11) and Windows Security logs into a dedicated index for real-time monitoring.</p>
-<img width="1319" height="670" src="https://github.com/user-attachments/assets/c6511caf-9ea5-43a1-84b9-269bd4edad2a" />
+
 
 Ref 3 – Kali Adversarial Activity
 <p>Used Kali Linux to execute a Metasploit reverse shell payload against the Windows VM, establishing a command-and-control (C2) session over the network.</p>
-<img width="767" height="466" src="https://github.com/user-attachments/assets/093aa790-2261-4d07-8d90-6643258a095f" />
+
 
 Ref 4 – Splunk Detection Query
 <p>Ran a Splunk Search Processing Language (SPL) query to identify the malicious process tree and the specific Kali IP address associated with the network connection.</p>
-<img width="1430" height="653" src="https://github.com/user-attachments/assets/ef84ebd5-8ed7-400a-a250-c6067d402ded" />
+
 
 Ref 5 – Incident Analysis Dashboard
 <p>Created a security dashboard visualizing telemetry spikes, such as unauthorized PowerShell execution and suspicious network beacons from the Windows host.</p>
-<img width="1086" height="438" src="https://github.com/user-attachments/assets/2c71112c-1c79-4ac4-b9d1-ecd61a310c50" />
+
